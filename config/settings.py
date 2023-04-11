@@ -132,3 +132,5 @@ CSRF_TRUSTED_ORIGINS  = [
     "https://deji01-turbo-orbit-9xrw7r6v574cx9vv-8000.preview.app.github.dev"
     ]
 AUTH_USER_MODEL = "accounts.CustomUser"
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
