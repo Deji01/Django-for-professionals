@@ -127,4 +127,7 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+CSRF_TRUSTED_ORIGINS  = [
+    "https://deji01-turbo-orbit-9xrw7r6v574cx9vv-8000.preview.app.github.dev"
+    ]
 AUTH_USER_MODEL = "accounts.CustomUser"
