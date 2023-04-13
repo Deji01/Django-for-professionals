@@ -24,10 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("DJANGO_SECRET_KEY")
+# SECRET_KEY = env("DJANGO_SECRET_KEY")
+SECRET_KEY = "django-insecure-6uha!+bnt&ze&9ejlz2cm&wvmaj-&%+%num9^s22df134bua5k"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DJANGO_DEBUG")
+# DEBUG = env.bool("DJANGO_DEBUG")
+DEBUG = True
 
 ALLOWED_HOSTS = ["localhost","127.0.0.1"]
 
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     # Local
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
+    "books.apps.BooksConfig",
 ]
 
 MIDDLEWARE = [
